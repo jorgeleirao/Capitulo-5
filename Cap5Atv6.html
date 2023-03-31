@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atividade 5</title>
+
+<script>
+    
+    function imc(){
+     event.preventDefault();
+     var form = document.querySelector("#calculo-imc");
+     var peso = document.getElementById("peso").value;
+     var altura = document.getElementById("altura").value;
+     var imc = (peso/(altura*altura)).toFixed(2);
+ 
+     var resultadoIMC = document.querySelector(".imc");
+     resultadoIMC.textContent = imc;
+    }
+ </script>
+
+</head>
+<body>
+    <div class="dados">
+        Altura (em metros): <input id="altura" type="number"> <br />
+        Peso (em quilos): <input id="peso" type="number"> <br />
+        <button onclick="imc()">Calcular IMC</button>
+    </div>
+    <div class="resultado">
+        <span class="imc">Calcule seu IMC</span>
+    </div>
+</body>
+</html>
