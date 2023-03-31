@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atividade 7</title>
+<script>
+    function multiplos(){
+        var soma = 0;
+        for(var i = 1; i < 1000; i++) {
+            if(i % 5 == 0 || i % 3 == 0) {
+             soma += i;
+            }
+        }
+        alert("A soma dos multiplos de 3 e 5 abaixo de 1000, é: " + soma);
+    }
+ </script>
+
+</head>
+<body>
+Atividade 7
+<button onclick="multiplos()">Clique aqui</button>
+</body>
+</html>
