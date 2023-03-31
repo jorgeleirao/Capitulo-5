@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atividade 9</title>
+<script>
+    function primos(){
+        var prim = [];
+        var n = 1001;
+        var i = 2;
+        var k = 0;
+        while(k < n){
+            var count = 0;
+            for(var j = 1; j <= i; j++){
+                if(i % j == 0){
+                    count++;
+                }
+            }
+            if(count == 2){
+                prim[k] = i;
+                k++;
+            }
+            i++;
+        }
+        
+        alert(n + "º número primo: " + prim[n-1]);
+    }
+ </script>
+
+</head>
+<body>
+Atividade 9
+<button onclick="primos()">Clique aqui</button>
+</body>
+</html>
