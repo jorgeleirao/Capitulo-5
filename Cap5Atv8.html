@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atividade 8</title>
+<script>
+    function fibonacci(){
+        var fibo = [];
+        fibo[0] = 0, fibo[1] = 1;
+        var soma = 0;
+        var i = 2;
+        do{
+            fibo[i] = fibo[i - 1] + fibo[i - 2];
+            if(fibo[i] % 2 == 0) {
+             soma += fibo[i];
+            }
+            i++;
+        }
+        while(fibo[i-1] <= 50000);
+        
+        alert("A soma dos números pares na sequencia de fibonacci abaixo de 50000, é: " + soma);
+    }
+ </script>
+
+</head>
+<body>
+Atividade 8
+<button onclick="fibonacci()">Clique aqui</button>
+</body>
+</html>
